@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.app {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #3e5954;
+  color: #e4e4e4;
+  font-size: 2rem;
+  font-family: 'Rubik', sans-serif;
+  gap: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+button {
+    border: none;
+    width: 10rem;
+    height: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #355c7d;
+    color: #e4e4e4;
+    border-radius: 1rem;
+}
+
+form {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+form label {
+  display: flex;
+  gap: 1rem;
+}
+.table {
+  display: flex;
+  width: 21.25rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  opacity: 1;
+}
+
+.table.gameOver {
+    opacity: 0.5;
+}
+
+.squares {
+  width: 6.25rem;
+  height: 6.25rem;
+  background: #c06c84;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.O {
+    background: #253342;
+}
+.X {
+    background: #232226;
+}
+
+.history {
+  display: flex;
+  position: absolute;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background: #5e9188;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  font-size: 1.8rem;
+  z-index: 999;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.history li {
+  list-style-type: none;
+}
